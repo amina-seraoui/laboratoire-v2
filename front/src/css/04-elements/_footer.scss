@@ -1,0 +1,44 @@
+footer {
+    background-color: $light-blue;
+    padding: ratio-space(13px) 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            max-width: 400px;
+            width: 45%;
+        }
+
+        .newsletter {
+            width: 45%;
+        }
+    }
+
+    @media #{$media-down-md} {
+        padding: ratio-space(2px) 0;
+
+        .container {
+            display: block;
+            text-align: center;
+
+            img {
+                max-width: 300px;
+            }
+
+            .newsletter {
+                width: 100%;
+
+                p, form {
+                    max-width: 300px;
+                    margin: auto;
+                }
+
+                p {
+                    margin-top: ratio-space(4px);
+                }
+            }
+        }
+    }
+}

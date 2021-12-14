@@ -1,0 +1,14 @@
+.btn {
+    display: inline-block;
+    background-color: $primary-color;
+    text-transform: uppercase;
+    color: $white;
+    padding: ratio-space(2px) ratio-space(4px);
+    border-radius: 5px;
+    
+    position: relative;
+    
+    font-family: $font-secondary;
+    
+    @extend %neumorphism;
+}

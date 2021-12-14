@@ -1,0 +1,16 @@
+form {
+    input {
+        max-width: 100%;
+        width: 300px;
+        font: inherit;
+        padding: ratio-space(2px);
+        margin-top: ratio-space(4px);
+        border-radius: 5px;
+
+        @extend %neumorphism;
+    }
+
+    input[type="submit"] {
+        @extend .btn;
+    }
+}

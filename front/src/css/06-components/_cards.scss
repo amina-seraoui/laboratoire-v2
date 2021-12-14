@@ -1,0 +1,41 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .card {
+        width: 500px;
+        border-radius: 15px;
+        padding: ratio-space(4px) ratio-space(10px);
+        margin: ratio-space(2px) 0;
+        text-align: center;
+
+        @extend %shadow;
+
+        .card-title {
+            margin: ratio-space(4px) 0;
+            font-weight: 600;
+        }
+        
+        .card-text {
+            text-transform: uppercase;
+            margin: ratio-space(2px) 0;
+        }
+        
+        .card-link {
+            display: inline-block;
+            padding: ratio-space(2px) 0;
+
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: $font-secondary;
+
+            @extend %underline;
+        }
+
+        @media #{$media-down-md} {
+            width: 80%;
+            padding: ratio-space(2px);
+        }
+    }
+}

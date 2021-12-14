@@ -1,0 +1,13 @@
+section {
+    margin: ratio-space(7px) 0;
+    text-align: center;
+
+    &#calendar {
+        @media #{$media-down-md} {
+            img {
+                max-width: 350px;
+                width: 100%;
+            }
+        }
+    }
+}
